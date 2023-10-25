@@ -1,0 +1,1410 @@
+@font-face {
+  font-family: 'IranSans';
+  src: url('../fonts/sans/Sans.eot') format('eot');
+  src: url('../fonts/sans/Sans.svg') format('svg');
+  src: url('../fonts/sans/Sans.ttf') format('ttft');
+  src: url('../fonts/sans/Sans.woff') format('woff');
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'IranSans';
+  background-color: #f4f4f4;
+}
+
+.fullflex {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+div {
+  margin: 0 auto
+}
+
+
+.topmenutop {
+  background-color: #2a292a;
+  padding: 0px 15px;
+  margin: 0px;
+}
+
+.menue {
+  padding: 0px !important;
+  grid-area: 1/1/1/1;
+  width: 100%;
+
+}
+
+
+.topandsub {
+  padding: 0px !important;
+  grid-area: 1/2/1/120;
+  width: 100%;
+  background: #4b4d4c;
+}
+
+@media (min-width:300px) and (max-width:1000px) {
+  .topandsub {
+    grid-area: 2/1/2/1;
+  }
+
+  .fullflex {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+
+.menue img {
+  width: 100%;
+}
+
+.topmenue {
+  padding: 0px !important;
+  display: flex;
+  flex-direction: column;
+}
+
+.topmenue ul li {
+  display: inline-block;
+  list-style: none;
+  padding-bottom: 7px;
+  padding-right: 7px;
+  overflow: hidden;
+}
+
+.topmenue a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 11px;
+  vertical-align: -moz-middle-with-baseline;
+}
+
+.topmenue a:hover {
+  color: #fcbd43;
+  transition: 200ms;
+}
+
+.navright {
+  float: left;
+  margin-left: -24px;
+  cursor: pointer;
+}
+
+.navright img {
+  width: 33%;
+}
+
+.navright a[title=sabt] {
+  color: #fcbd43;
+  margin-left: 28px;
+  font-size: 11px;
+}
+
+.column [title=primordia] {
+  width: 100%;
+  margin-right: -42px;
+}
+
+.wider {
+  width: 400px;
+}
+
+.column [title=uncertain] {
+  width: 100%;
+  margin-right: -56px;
+}
+
+.morewidth {
+  width: 1061px;
+}
+
+.submenue {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.column span {
+  color: #fcbd43;
+  margin-bottom: 3px;
+  display: ruby-base;
+  font-size: 16px;
+}
+
+.dropdown {
+  float: right;
+  overflow: inherit;
+  margin-left: 10px;
+  margin-top: 0px;
+}
+
+.dropdown .dropbtn1 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 4vw;
+  padding-top: 65px;
+  width: 5vw;
+  background: url('../images/icons8-steam-logo-48.png')no-repeat center;
+  transition: all 1s;
+  font-size: 10px;
+}
+
+.dropdown .dropbtn1:hover {
+ background: url("../images/steam-hover.png") no-repeat center;
+}
+
+.dropdown .dropbtn2 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 4vw;
+  padding-top: 65px;
+  width: 5vw;
+  background: url('../images/ps.png') no-repeat center;
+  transition: all 1s;
+  font-size: 10px;
+}
+
+.dropdown .dropbtn2:hover {
+  background: url('../images/ps-hover.png')no-repeat center;
+}
+
+.dropdown .dropbtn3 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 4vw;
+  padding-top: 65px;
+  width: 5vw;
+  background: url('../images/ps.png') no-repeat center;
+  transition: all 1s;
+  font-size: 10px;
+}
+
+.dropdown .dropbtn3:hover {
+  background: url('../images/ps-hover.png')no-repeat center;
+}
+
+.dropdown .dropbtn4 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 4vw;
+  padding-top: 65px;
+  width: 5vw;
+  background: url('../images/xbox.png') no-repeat center;
+  transition: all 1s;
+  font-size: 10px;
+}
+
+.dropdown .dropbtn4:hover {
+  background: url('../images/xbox-hover.png')no-repeat center;
+}
+
+.dropdown .dropbtn5 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 4vw;
+  padding-top: 65px;
+  width: 5.3vw;
+  background: url('../images/android.png') no-repeat center;
+  transition: all 1s;
+  font-size: 10px;
+}
+
+.dropdown .dropbtn5:hover {
+  background: url('../images/android-hover.png')no-repeat center;
+}
+
+.dropdown .dropbtn6 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 4vw;
+  padding-top: 65px;
+  width: 5vw;
+  background: url('../images/xbox.png') no-repeat center;
+  transition: all 1s;
+  font-size: 10px;
+}
+
+.dropdown .dropbtn6:hover {
+  background: url('../images/xbox-hover.png')no-repeat center;
+}
+
+.dropdown .dropbtn7 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 4vw;
+  padding-top: 65px;
+  width: 5vw;
+  background: url('../images/ps.png') no-repeat center;
+  transition: all 1s;
+  font-size: 10px;
+}
+
+.dropdown .dropbtn7:hover {
+  background: url('../images/ps-hover.png') no-repeat center;
+}
+
+.dropdown .dropbtn8 {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  height: 4vw;
+  padding-top: 65px;
+  width: 5vw;
+  background: url('../images/note.png') no-repeat center;
+  transition: all 1s;
+  font-size: 10px;
+}
+
+.dropdown .dropbtn8:hover {
+  background: url('../images/note-hover.png')no-repeat center;
+  transition: all 1s;
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: all 1s;
+}
+
+.dropdown-contentlast {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 100%;
+  left: 484%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  z-index: 1;
+  transition: 1s all;
+}
+
+.dropdown:hover .dropdown-contentlast {
+  display: block;
+  z-index: 1;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: right;
+  width: 18.33%;
+  padding: 10px;
+  background-color: #fff;
+  height: 305px;
+  border-bottom: 6px solid #fcbd43;
+}
+
+.lowwidth {
+  width: 12.33%;
+}
+
+.column a {
+  float: none;
+  color: black;
+  padding: 2px;
+  padding-bottom: 5px;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.column img {
+  filter: brightness(60%);
+  margin-bottom: 2px;
+  margin-right: -4px;
+  width: 100%;
+  margin-top: 3px;
+}
+
+.column a[title=columnimg] {
+  position: absolute;
+  top: 15px;
+  font-size: 10px;
+  width: 169px;
+  color: #fff;
+
+}
+
+.column a[title=columnimgdown] {
+  position: absolute;
+  top: 166px;
+  font-size: 10px;
+  width: 169px;
+  color: #fff;
+}
+
+
+.column a[title=columnimg]:hover {
+  background: none;
+
+}
+
+.column a[title=columnimgdown]:hover {
+  background: none;
+
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+.dpxs{
+  background-color: #2a292a;
+  color: white;
+}
+.active{
+  display: block !important;
+  background-color: #7b5613;
+}
+.active a{
+  display: block;
+  text-decoration: none;
+  color: #2a292a;
+  font-size: 14px;
+
+}
+.hiddenme{
+  display: none;
+}
+@media (min-width:300px) and (max-width:768px){
+  .dropdown{
+    display: none;
+  }
+}
+.myburgerbt {
+  color: white;
+  background-color: #000000;
+  display: block;
+  position: absolute;
+  top: 67px;
+  right: 0px;
+  padding: 20px;
+  width: 100%;}
+
+.advertism {
+  border: 1px solid #b1b1b1;
+  margin-top: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.advertism img {
+
+  width: 100%;
+
+}
+
+.carouselimg1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/God-Of-War-4.png') center no-repeat;
+  width: 812px;
+  height: 345px;
+
+}
+
+.carouselimg2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Atomicheart.png') center no-repeat;
+  width: 812px;
+  height: 345px;
+}
+
+.carouselimg3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Fifa-2023.png') center no-repeat;
+  width: 812px;
+  height: 345px;
+  z-index: 0;
+}
+
+.carouselimg4 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/high-on-life.png') center no-repeat;
+  width: 812px;
+  height: 345px;
+}
+
+.carouselimg5 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/Starfield.png') center no-repeat;
+  width: 812px;
+  height: 345px;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  border-radius: 0px;
+  width: 148px;
+  height: 10px;
+  margin-bottom: -50px;
+  background-color: #363636;
+}
+
+.carousel-indicators {
+  width: 812px;
+  margin-right: -430px;
+}
+
+.carousel-indicators .active {
+  display: inline-block;
+  border-radius: 0px;
+  width: 148px;
+  height: 10px;
+  margin-bottom: -50px;
+  background-color: #fcbd43;
+}
+
+.size812 {
+  width: 812px;
+  height: 345px;
+}
+
+.leftimgcarousel {
+  padding-bottom: 10px;
+  margin-top: 20px;
+
+}
+
+.leftimgcarousel img {
+  min-width: 100%;
+  padding-bottom: 10px;
+}
+
+@media (min-width:300px) and (max-width: 1200px) {
+  .leftimgcarousel {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 93px;
+  }
+}
+
+.dwcrsadv {
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.item img {
+  position: absolute;
+  bottom: 30px;
+  left: 70px;
+}
+
+.orange {
+  color: #fcbd43;
+  font-size: medium;
+}
+
+.issue {
+  font-variant: sub;
+  color: #ffffff;
+  text-align: justify;
+  fill: #ffffff;
+  cursor: default;
+  font-size: small;
+}
+
+.paragraph {
+  margin-top: 183px;
+
+}
+
+.myvideogamesimg {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/background5videogame.png');
+  width: 100%;
+  margin-bottom: 10px;
+
+}
+
+.videogames {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  padding: 20px 0;
+}
+
+.img-child span {
+  color: white;
+  font-size: 12px;
+  padding: 10px 0;
+  width: 100%;
+  display: table-caption;
+}
+
+.img-child {
+  position: relative;
+  padding: 5px;
+}
+
+.flexitems {}
+
+.img-child img {
+  padding-bottom: 13px;
+  width: 100%;
+}
+
+.playlogo {
+  position: absolute;
+  width: 44% !important;
+  top: 8%;
+  left: 31%;
+  z-index: 1;
+}
+
+.img-child:hover span {
+  color: #fcbd43;
+  transition: 1s all;
+}
+
+.img-child:hover img {
+  z-index: 2;
+  transition: 1s all;
+}
+
+.dnone {
+  z-index: 0;
+}
+
+@media (min-width:100px) and (max-width:539px) {
+  .videogames {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 20px 0;
+  }
+
+  .img-child {
+    width: 100%;
+  }
+}
+
+@media (min-width:540px) and (max-width:768px) {
+  .videogames {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 20px 0;
+  }
+
+  .img-child {
+    width: 95%;
+  }
+}
+
+@media (min-width:769px) and (max-width:1200px) {
+  .videogames {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px 0;
+  }
+
+}
+
+.advbot {
+
+  height: 667px;
+  margin-bottom: 10px;
+  margin-right: 0px;
+
+
+}
+
+.advbot h5 {
+  padding: 15px 10px;
+  width: 100%;
+  margin-right: 0px;
+  margin-top: 0px;
+  background-color: #ffff;
+  box-shadow: 1px 1px #e8e8e8;
+}
+
+.advimgbot img {
+  width: 100%;
+}
+
+.advimgbot>span {
+
+  margin-top: 12px;
+  box-sizing: border-box;
+  display: flex;
+  padding: 2px 4px;
+  overflow-y: scroll;
+  height: 90px;
+  background-color: #f4f4f4;
+  font-size: 11px;
+  line-height: 2;
+}
+
+.advbotcolor {
+  color: #7b5613;
+  font-size: 12px;
+  text-align: center;
+  display: block !important;
+  margin-top: 30px;
+  background-color: none !important;
+  box-shadow: none !important;
+}
+
+.advimgbot button {
+  width: 100%;
+  height: 43px;
+  background-color: #ffedcc;
+  border-radius: 5px;
+  box-shadow: 2px 2px #d4ab61;
+  border: none;
+}
+
+.padd {
+  background-color: #fff;
+  width: 106%;
+  padding: 23px;
+  margin-right: -9px;
+  border-bottom: 8px solid #fcbd43;
+  z-index: 1;
+}
+
+
+
+.right25px a {
+  text-decoration: none;
+}
+
+.rightcontentbot {
+  margin-bottom: 10px;
+  border: 1px solid #d7d7d7;
+  padding-bottom: 10px;
+  padding: 5px;
+  padding-bottom: 10px;
+  background-color: white;
+}
+
+.rightcontentbot span {
+  display: inline-block;
+  width: 47%;
+  padding-right: 12px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  font-size: 12px;
+  background-color: white;
+  border: 1px solid #d7d7d7;
+}
+
+.yektanet {
+  display: inline-block;
+  width: 47%;
+  font-size: 11px;
+  padding-right: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  color: #363636;
+  border: 1px solid #d7d7d7;
+  background-color: #f4f4f4;
+}
+
+.right25px p {
+  color: #000000 !important;
+  font-size: 11px;
+  overflow: hidden;
+  text-align: right;
+}
+
+.rightcontentbot:hover p,
+image {
+  color: red !important;
+}
+
+.alltopgames {
+  padding: 2px;
+
+}
+
+.topgamesinthead {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.topgamesinthead span {
+  color: #b7b7b7;
+  font-size: 12px;
+}
+.topgamesint {
+  position: relative;
+  margin-bottom: 2px;
+}
+
+.topgamesint .Atlas {
+  position: absolute;
+  top: 98px;
+  left: 15px;
+  color: white;
+  font-size: 18px;
+}
+
+.topgamesint .othertopgames {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  color: white;
+  font-size: 18px;
+  overflow: hidden;
+}
+
+.topgamesint .shadow {
+  filter: brightness(60%);
+  width: 100%;
+}
+
+.topgamesint:hover span,
+.shadow {
+  color: #fcbd43;
+  transition: 0.8s;
+}
+
+.topgamesint .numbers {
+  position: absolute;
+  z-index: 1;
+  border-radius: 44px;
+  bottom: -1px;
+  right: -19px;
+  width: 24%;
+}
+
+.topweekmusic {
+  position: relative;
+  padding: 2px;
+}
+
+.topweekmusic img {
+  filter: brightness(60%);
+  margin-bottom: 6px;
+}
+
+.topweekmusic span {
+  position: absolute;
+  font-size: 15px;
+  color: white;
+  top: 112px;
+  left: 24px;
+}
+
+.irangamenews img {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.irangamenews {
+  background-color: white;
+  padding: 15px;
+  box-shadow: .5px .9px 6px rgba(0, 0, 0, .1);
+}
+
+.Circle-News {
+  position: relative;
+  margin-bottom: 36px;
+
+}
+
+.irangamenews a {
+  margin-right: 16px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: black;
+  position: absolute;
+  display: inline-block;
+  width: 60%;
+}
+
+.irangamenews span {
+  bottom: -19px;
+  right: -3px;
+  position: absolute;
+  color: #afafaf;
+}
+
+.irangamenews .morenews {
+  color: #afafaf;
+  margin-right: 119px;
+  font-size: 10px;
+  margin-top: -6px;
+}
+
+.Circle-News:hover a,
+img {
+  color: #fcbd43;
+}
+
+.morenews:hover {
+  color: #fcbd43;
+}
+
+
+.midcontent h3 {
+  border: 1px solid #b1b1b1;
+
+}
+
+
+
+.fullint {
+  background-color: white;
+  background: url('../images/steam-Background-resiz\ \(Copy\).png') left no-repeat white !important;
+  margin-bottom: 10px;
+  padding: 13px;
+  box-shadow: .5px .9px 6px rgba(0, 0, 0, .1);
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+@media (min-width:100px) and (max-width:1100px) {
+  .fullint {
+    grid-template-columns: auto;
+  }
+}
+
+
+@media (min-width:200px)and (max-width:501px) {}
+
+@media (min-width:500px)and (max-width:1000px) {}
+
+.headerint {
+  border: 1px solid #ebebeb;
+  padding: 7px;
+  color: black;
+  margin-bottom: 2px;
+  box-shadow: 1px 1px #ebebeb;
+  background: #f4f4f4;
+  width: 100%;
+  margin-right: 0px;
+}
+
+.specification {
+  font-size: 11px;
+  padding-right: 27px;
+  width: 100%;
+}
+
+.paragint {
+  width: 100%;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+.specification span {
+  margin-left: 5px;
+  color: #bebebe;
+  width: 100%;
+}
+
+.headerint p {
+  color: black;
+}
+
+.headerint a {
+  text-decoration: none;
+}
+
+.paragint ul {
+  font-size: 12px;
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.paragint li {
+  padding-bottom: 2px;
+}
+
+.gamesint {
+  font-size: 11px;
+  min-width: 100%;
+  color: #0c0c0c;
+  padding-right: 36px;
+}
+
+.update {
+
+  background-color: #464646;
+  border-radius: 100%;
+  left: 0px;
+  color: white;
+  top: -38px;
+  overflow-x: hidden;
+  padding: 16px;
+  padding-top: 21px;
+  z-index: 0;
+  padding-top: 38px;
+  cursor: help;
+}
+
+.update span {
+  font-size: 12px;
+}
+
+.redadverb {
+  width: fit-content;
+}
+
+.redadverb img {
+  width: fit-content;
+}
+
+.comingsoon {
+  width: 280px;
+  height: 376;
+  position: relative;
+  padding: 4px;
+  background-color: white;
+  border: 1px solid #c5c1c1;
+}
+
+.leftheaderint {
+  border: 1px solid #ebebeb;
+  padding: 5px;
+  color: black;
+  margin-bottom: 10px;
+  box-shadow: 1px 1px #ebebeb;
+  background: #f4f4f4;
+  width: 278px;
+}
+
+.leftheaderint h2 {
+  font-size: 13px;
+}
+
+.coming {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, .5)), url('../images/ComingsoonGames.png') top no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 12vh;
+  margin-bottom: 4px;
+
+  width: 100%;
+}
+
+.imgtwo {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, .5)), url('../images/undercoming.png') top no-repeat;
+  background-size: cover;
+}
+
+.imgthree {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, .5)), url('../images/undercoming-LieOfPi.png') top no-repeat;
+  background-size: cover;
+}
+
+.imgfour {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, .5)), url('../images/undercoming-Fifa23.png') top no-repeat;
+  background-size: cover;
+}
+
+.imgfive {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, .5)), url('../images/undercoming-AC.png') top no-repeat;
+  background-size: cover;
+}
+
+
+
+.activeme {
+  height: 33vh;
+}
+
+.coming img {
+  filter: brightness(60%);
+  width: 100%;
+
+
+}
+
+.comingrel span,
+.comingrel time,
+.comingrel p,
+.comingrel h1 {
+  position: absolute;
+}
+
+.comingrel {
+  padding-bottom: 10px;
+}
+
+.comingrel p {
+  bottom: 0px;
+  color: white;
+  left: 17px;
+  width: 66%;
+  text-align: left;
+}
+
+.comingrel time {
+  bottom: 16px;
+
+  right: 10px;
+  bottom: 15px;
+  color: white
+}
+
+.comingrel span {
+  top: 60%;
+  color: white;
+  right: 0px;
+}
+
+.comingrel h1 {
+  top: 35%;
+  color: #fcbd43;
+  right: 15px;
+}
+
+.undercoming {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('../images/undercoming.png');
+  width: 100%;
+  height: 65px;
+  transform: rotateX('100');
+}
+
+.undercoming1 {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('../images/undercoming-LieOfPi.png');
+  margin-top: 2px;
+  background-attachment: fixed;
+  margin-top: 2px;
+  width: 100%;
+  height: 65px;
+  transform: rotateX('100');
+}
+
+.undercoming2 {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('../images/undercoming-Fifa23.png');
+  margin-top: 2px;
+  background-attachment: fixed;
+  width: 100%;
+  height: 65px;
+  transform: rotateX('100');
+}
+
+.undercoming3 {
+  background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('../images/undercoming-AC.png');
+  margin-top: 2px;
+  background-attachment: fixed;
+  width: 100%;
+  height: 65px;
+  transform: rotateX('100');
+}
+
+.coopgames {
+  background-color: white;
+  border: 1px solid #d7d7d7;
+  background: url('../images/sheet\ icon\ \(Copy\).jpg') left bottom no-repeat white;
+  margin-bottom: 2px;
+  z-index: 1;
+  box-shadow: .5px .9px 6px rgba(0, 0, 0, .1);
+}
+
+.coopimg img {
+  width: 100%;
+  padding: 6px;
+}
+
+.timer span {
+  margin-right: 32px;
+  color: #bebebe;
+  background-color: white;
+  font-size: 10px;
+}
+
+.timer {
+  display: flex;
+  margin-right: -18px;
+}
+
+/* .timer span:first-child::after {
+  content: url('../images/calendering.ico');
+} */
+.coopcontent {
+  font-size: 11px;
+  text-align: inherit;
+  width: 86%;
+  margin-right: 4px;
+  padding-bottom: 3px;
+  padding-top: 5px;
+}
+
+.sheeticon {
+  position: absolute;
+  left: 0px;
+  bottom: 10px;
+  z-index: 0;
+}
+
+.nextpage {
+  border-radius: 100%;
+  float: left;
+  margin-bottom: 12px;
+  margin-left: 44px;
+  margin-top: 10px;
+}
+
+.nextpage button {
+  border-radius: 79%;
+  width: 36px;
+  height: 38px;
+  font-size: 11px;
+  background-color: white;
+  border: 1px solid #dedede;
+}
+
+.nextpage button:hover {
+  background-color: #464646;
+  color: white;
+  transition: 0.4s;
+}
+
+.allgamecard {
+  width: 100%;
+ display:flex;
+ justify-content: center;
+ flex-wrap: wrap;
+}
+
+.lastandroidgames {
+ margin: 0px;
+}
+
+.gamescard {
+  background-color: #ffba3d;
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+
+}
+
+.yellow {
+  background-color: #ffba3d;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.gamescard img {
+  border-radius: 30px;
+  border: 5px solid;
+  z-index: 109 !important;
+  position: relative;
+  
+}
+
+/* @media (min-width:770px) and (max-width:990px) {
+  .gamescard img {
+    margin-right: 52px;
+  }
+
+  .lastandroidgames h3 {
+    font-size: 14px;
+  }
+
+  .androidbutton button {
+    font-size: 10px;
+    margin-right: 169px;
+    margin-top: 5px;
+  }
+} */
+
+/* @media (min-width:100px) and (max-width:769px) {
+  .gamescard img {
+    margin-right: 80px;
+  }
+
+  .lastandroidgames h3 {
+    font-size: 13px;
+  }
+
+  .androidbutton button {
+    font-size: 10px;
+    margin-right: 80px;
+    margin-top: 5px;
+    width: 100px;
+  }
+
+  .allgamecard {
+    margin-right: 0px;
+  }
+} */
+
+.androidint {
+  background: url('../images/AndroidApplelogo.png') bottom center no-repeat white;
+  height: 139px;
+
+  width: 100%;
+  padding-top: 35px;
+  margin-top: -30px;
+}
+
+.androidint span {
+  left: -69px;
+  font-size: 13px;
+  display: block;
+  text-align: center;
+  padding-top: 9px;
+}
+
+.stars {
+  text-align: center;
+  display: block;
+}
+.androidbutton{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 23px;
+}
+.androidbutton button {
+  background-color: #464646;
+  color: #ffba3d;
+  box-shadow: 3px 3px 3px 3px #464646;
+  border: none;
+  height: 44px;
+}
+
+.timeandview p {
+  font-size: 9px;
+  background-color: #464646;
+  width: 131px;
+  color: #b4b4b4;
+  padding: 7px;
+  right: -3px;
+  padding-right: 21px;
+  z-index: 1;
+  min-width: 100%;
+}
+
+.timeandview {
+  background-color: #464646;
+  width: 100%;
+
+}
+
+.timeandview a {
+  background-color: #2a292a;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  float: inline-end;
+  margin-top: -5px;
+  margin-left: -6px;
+}
+
+.endparag {
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.endparag p {
+  font-size: 12px;
+  padding-bottom: 10px;
+  line-height: 27px;
+  margin-top: 18px;
+}
+
+.endparag a {
+  text-decoration: none;
+  color: #7b5613;
+}
+
+
+.black {
+  background-color: #363636;
+  height: auto;
+}
+
+.lastfooter li {
+  color: white;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.lastfooter ul {
+  list-style: none;
+  margin-left: -88px;
+}
+
+.lastfooter li time {
+  font-size: 10px;
+  display: block;
+  margin-top: 3px;
+  color: #9c9c9c;
+}
+
+.lastfooter img {
+  width: 120px;
+}
+
+.lastfooter li:hover {
+  color: #fcbd43;
+}
+
+.footerhead {
+  color: white;
+  margin-right: 21px;
+  margin-bottom: 20px;
+}
+
+.licence {
+  background-color: #252525;
+}
+
+.licence p {
+  color: white;
+  font-size: 12px;
+  padding-top: 12px;
+  display: inline-block;
+  padding-right: 127px;
+}
+
+.footerlogo {
+  display: inline;
+  padding-right: 300px;
+}
+
+.maxfootersize {
+  background-color: #363636;
+}
