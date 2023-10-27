@@ -397,16 +397,22 @@ div {
   }
 }
 
+.searchbox{
+  background-color: #fcbd43;
+  padding-right: 10px;
+  margin: 0px;
+}
 
 .dpxs{
   background-color: #2a292a;
   color: white;
+  display: none;
 }
-.active{
+.activemenu{
   display: block !important;
   background-color: #7b5613;
 }
-.active a{
+.activemenu a{
   display: block;
   text-decoration: none;
   color: #2a292a;
@@ -418,6 +424,9 @@ div {
 }
 @media (min-width:300px) and (max-width:768px){
   .dropdown{
+    display: none;
+  }
+  .searchbox{
     display: none;
   }
 }
@@ -561,12 +570,27 @@ div {
   margin-bottom: 10px;
 
 }
-
+.myvideogamesimg header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: white;
+  width: 100%;
+}
+.myvideogamesimg header div{
+  display: inline;
+  margin: 0px;
+}
+.myvideogamesimg header div a{
+color: white;
+text-decoration: none;
+}
 .videogames {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   padding: 20px 0;
 }
+
 
 .img-child span {
   color: white;

@@ -57,12 +57,12 @@ function activeClass() {
     for (var i = 0; i < items.length; i++) {
       items[i].onclick = function () {
         var child = this.querySelector(".hiddenme");
-        child.classList.toggle("active");
+        child.classList.toggle("activemenu");
   
         for (var j = 0; j < items.length; j++) {
           var otherChild = items[j].querySelector(".hiddenme");
           if (otherChild !== child) {
-            otherChild.classList.remove("active");
+            otherChild.classList.remove("activemenu");
             child.style.transition = "all 0.5s";
           }
         }
