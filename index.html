@@ -301,40 +301,54 @@
 
         </div>
     </div>
-    <div class="dpxs hidden-lg hidden-md" id="show">
-
-        <div class="myitems" onclick="activeClass()"><span>xbox</span>
-            <div class="hiddenme activemenu">
-                <a href="/"><span>item1</span></a>
-                <a href="/"><span>item2</span></a>
-                <a href="/"><span>item3</span></a>
-                <a href="/"><span>item4</span></a>
-            </div>
+    <div class="gridemenu">
+        <div class="showmenu">
+            <a href="javascript:void(0);" id="myBurger" class="hidden-lg hidden-md myburgerbt" onclick="burgerMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
+        <div class="dpxs hidden-lg hidden-md" id="show">
 
-        <div class="myitems" onclick="activeClass()"><span>pc</span>
-            <div class="hiddenme">
-                <a href="/"><span>item1</span></a>
-                <a href="/"><span>item2</span></a>
-                <a href="/"><span>item3</span></a>
-                <a href="/"><span>item4</span></a>
+            <div class="myitems" onclick="activeClass()"><span>xbox</span>
+                <div class="hiddenme">
+                    <a href="/"><span>item1</span></a>
+                    <a href="/"><span>item2</span></a>
+                    <a href="/"><span>item3</span></a>
+                    <a href="/"><span>item4</span></a>
+                </div>
             </div>
-        </div>
 
-        <div class="myitems" onclick="activeClass()"><span>ps5</span>
-            <div class="hiddenme">
-                <a href="/"><span>item1</span></a>
-                <a href="/"><span>item2</span></a>
-                <a href="/"><span>item3</span></a>
-                <a href="/"><span>item4</span></a>
+            <div class="myitems" onclick="activeClass()"><span>pc</span>
+                <div class="hiddenme activemenu">
+
+                    <span id="showmazemenu" onclick="activeMazeMenu()">item1</span>
+                    <div class="mazemenu" id="mymazemenu">
+                        <div>
+                            <a href="/"><span>amze1</span>
+                        </div>
+                        <div >
+                            <a href="/"><span>maz2</span>
+                        </div>
+                        <div>
+                            <a href="/"><span>maz3</span>
+                        </div>
+                    </div>
+                    <div><a href="/"><span>item2</span></a></div>
+                    <div><a href="/"><span>item3</span></a></div>
+                    <div><a href="/"><span>item4</span></a></div>
+                </div>
+            </div>
+
+            <div class="myitems" onclick="activeClass()"><span>ps5</span>
+                <div class="hiddenme">
+                    <a href="/"><span>item1</span></a>
+                    <a href="/"><span>item2</span></a>
+                    <a href="/"><span>item3</span></a>
+                    <a href="/"><span>item4</span></a>
+                </div>
             </div>
         </div>
     </div>
-
-
-    <a href="javascript:void(0);" id="myBurger" class="hidden-lg hidden-md myburgerbt" onclick="burgerMenu()">
-        <i class="fa fa-bars"></i>
-    </a>
 
 
     <div class="container">
@@ -460,14 +474,14 @@
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 myvideogamesimg">
                 <header>
                     <div>
-                    <span>ویدئو ها</span>
-                </div>
-                <div>
-                    <span class="rightlink">حتما ببینید!</span>
-                    <a href="#">
-                        تریلر داستانی و مرحله اول بازی Call of Duty: Modern Warfare III</a>
-                    
-                </div>
+                        <span>ویدئو ها</span>
+                    </div>
+                    <div>
+                        <span class="rightlink">حتما ببینید!</span>
+                        <a href="#">
+                            تریلر داستانی و مرحله اول بازی Call of Duty: Modern Warfare III</a>
+
+                    </div>
                 </header>
                 <div class="videogames">
 
@@ -1136,15 +1150,15 @@
                 </div>
             </div>
 
-            <div class="nextpage">
+            <div class="col-xs-12 nextpage">
                 <button type="button">
-                </button>
-                <button type="button">بعدی</button>
-                <button type="button">5</button>
-                <button type="button">4</button>
-                <button type="button">3</button>
-                <button type="button">2</button>
-                <button type="button">1</button>
+                    << </button>
+                        <button type="button">بعدی</button>
+                        <button type="button">5</button>
+                        <button type="button">4</button>
+                        <button type="button">3</button>
+                        <button type="button">2</button>
+                        <button type="button">1</button>
             </div>
             <!--محتوای سمت چپ-->
 
@@ -1162,82 +1176,91 @@
             </div>
             <div class="comingsoon" id="myToggle">
                 <div class="coming activeme" onclick="toggleMe()">
-                    <a href="#">
-
-                        <div class="comingrel">
-
-                            <h1>23</h1>
-                            <span> روز تا تاریخ انتشار</span>
 
 
+                    <div class="comingrel">
+
+                        <h1>23</h1>
+                        <span> روز تا تاریخ انتشار</span>
+
+                        <a href="#">
                             <p>
                                 RACE: Rocket Arena Car Extreme PC . Android
                             </p>
-                            <time>11 مهر 1402</time>
-                        </div>
+                        </a>
+                        <time>11 مهر 1402</time>
+                    </div>
 
-                    </a>
+
                 </div>
 
                 <div class="coming imgtwo" onclick="toggleMe()">
-                    <a href="#">
-                        <div class="comingrel">
 
-                            <h1>23</h1>
-                            <span> روز تا تاریخ انتشار</span>
+                    <div class="comingrel">
+
+                        <h1>23</h1>
+                        <span> روز تا تاریخ انتشار</span>
+                        <a href="#">
                             <p>
                                 RACE: Rocket Arena Car Extreme PC . Android
                             </p>
-                            <time>11 مهر 1402</time>
-                        </div>
+                        </a>
+                        <time>11 مهر 1402</time>
+                    </div>
                 </div>
 
-                </a>
+
 
                 <div class="coming imgthree" onclick="toggleMe()">
-                    <a href="#">
-                        <div class="comingrel">
 
-                            <h1>23</h1>
-                            <span> روز تا تاریخ انتشار</span>
+                    <div class="comingrel">
+
+                        <h1>23</h1>
+                        <span> روز تا تاریخ انتشار</span>
+                        <a href="#">
                             <p>
                                 RACE: Rocket Arena Car Extreme PC . Android
                             </p>
-                            <time>11 مهر 1402</time>
-                        </div>
+                        </a>
+                        <time>11 مهر 1402</time>
+                    </div>
                 </div>
 
-                </a>
+
 
                 <div class="coming imgfour" onclick="toggleMe()">
-                    <a href="#">
-                        <div class="comingrel">
 
-                            <h1>23</h1>
-                            <span> روز تا تاریخ انتشار</span>
+                    <div class="comingrel">
+
+                        <h1>23</h1>
+                        <span> روز تا تاریخ انتشار</span>
+                        <a href="#">
                             <p>
                                 RACE: Rocket Arena Car Extreme PC . Android
                             </p>
-                            <time>11 مهر 1402</time>
-                        </div>
+                        </a>
+                        <time>11 مهر 1402</time>
+                    </div>
                 </div>
 
-                </a>
+
 
                 <div class="coming imgfive" onclick="toggleMe()">
-                    <a href="#">
-                        <div class="comingrel">
 
-                            <h1>23</h1>
-                            <span> روز تا تاریخ انتشار</span>
+                    <div class="comingrel">
+
+                        <h1>23</h1>
+                        <span> روز تا تاریخ انتشار</span>
+                        <a href="#">
                             <p>
                                 RACE: Rocket Arena Car Extreme PC . Android
                             </p>
-                            <time>11 مهر 1402</time>
-                        </div>
+
+                        </a>
+                        <time>11 مهر 1402</time>
+                    </div>
                 </div>
 
-                </a>
 
             </div>
 

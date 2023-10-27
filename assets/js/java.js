@@ -22,55 +22,94 @@
 // }
 
 function toggleMe() {
-    var myImages = document.getElementById("myToggle");
-    var change = myImages.querySelectorAll(".coming");
+  var myImages = document.getElementById("myToggle");
+  var change = myImages.querySelectorAll(".coming");
 
-    for (var i = 0; i < change.length; i++) {
-        change[i].onclick = function () {
+  for (var i = 0; i < change.length; i++) {
+    change[i].onclick = function () {
 
-            for (var j = 0; j < change.length; j++) {
-                if (change[j] != this) {
-                    change[j].classList.remove("activeme");
-                }
-            }
-            this.classList.add("activeme");
-            this.style.transition = "all 0.5s"
-        };
-    }
+      for (var j = 0; j < change.length; j++) {
+        if (change[j] != this) {
+          change[j].classList.remove("activeme");
+        }
+      }
+      this.classList.add("activeme");
+      this.style.transition = "all 0.5s"
+    };
+  }
 }
 
 function burgerMenu() {
-    var btn = document.getElementById("myBurger");
-    var menu = document.getElementById("show");
-    btn.onclick = function () {
-        if (menu.style.display === "block") {
-            menu.style.display = "none";
-        } else {
-            menu.style.display = "block";
-        }
-    }
-}
-function activeClass() {
-    var showitems = document.getElementById("show");
-    var items = showitems.querySelectorAll(".myitems");
-  
-    for (var i = 0; i < items.length; i++) {
-      items[i].onclick = function () {
-        var child = this.querySelector(".hiddenme");
-        child.classList.toggle("activemenu");
-  
-        for (var j = 0; j < items.length; j++) {
-          var otherChild = items[j].querySelector(".hiddenme");
-          if (otherChild !== child) {
-            otherChild.classList.remove("activemenu");
-            child.style.transition = "all 0.5s";
-          }
-        }
-      };
+  var btn = document.getElementById("myBurger");
+  var menu = document.getElementById("show");
+  btn.onclick = function () {
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
     }
   }
-  
+}
+function activeClass() {
+  var showitems = document.getElementById("show");
+  var items = showitems.querySelectorAll(".myitems");
 
+  for (var i = 0; i < items.length; i++) {
+    items[i].addEventListener("click",function () {
+      var child = this.querySelector(".hiddenme");
+      child.classList.toggle("activemenu");
+
+      for (var j = 0; j < items.length; j++) {
+        var otherChild = items[j].querySelector(".hiddenme");
+        if (otherChild !== child) {
+          otherChild.classList.remove("activemenu");
+          child.style.transition = "all 0.5s";
+        }
+      }
+    });
+  }
+}
+
+
+function activeMazeMenu() {
+  var showmazemenu = document.getElementById("showmazemenu");
+  var mazemenu = document.getElementById("mymazemenu");
+  showmazemenu.addEventListener("click",function () {
+    if(mazemenu.style.display === "block"){
+    mazemenu.style.display = "none";}
+    else{
+      mazemenu.style.display = "block"
+    }
+  })
+  ;
+}
+
+// function activeClass() {
+//   var showitems = document.getElementById("show");
+//   var items = showitems.querySelectorAll(".myitems");
+
+//   for (var i = 0; i < items.length; i++) {
+//     items[i].addEventListener("click", function () {
+//       var child = this.querySelector(".hiddenme");
+//       child.classList.toggle("activemenu");
+
+//       for (var j = 0; j < items.length; j++) {
+//         var otherChild = items[j].querySelector(".hiddenme");
+//         if (otherChild !== child) {
+//           otherChild.classList.remove("activemenu");
+//         }
+//       }
+//     });
+//   }
+// }
+
+// function activeMazeMenu() {
+//   var showmazemenu = document.getElementById("showmazemenu");
+//   var mazemenu = document.getElementById("mymazemenu");
+//   showmazemenu.addEventListener("click", function () {
+//     mazemenu.style.display = mazemenu.style.display === "block" ? "none" : "block";
+//   });
+// }
 
 
 
