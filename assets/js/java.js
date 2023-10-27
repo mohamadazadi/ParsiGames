@@ -57,13 +57,16 @@ function activeClass() {
   for (var i = 0; i < items.length; i++) {
     items[i].addEventListener("click",function () {
       var child = this.querySelector(".hiddenme");
-      child.classList.toggle("activemenu");
+      child.classList.add("activemenu");
+      // child.classList.toggle("activemenu");
 
       for (var j = 0; j < items.length; j++) {
         var otherChild = items[j].querySelector(".hiddenme");
         if (otherChild !== child) {
           otherChild.classList.remove("activemenu");
-          child.style.transition = "all 0.5s";
+        }
+        else{
+         
         }
       }
     });
@@ -83,6 +86,37 @@ function activeMazeMenu() {
   })
   ;
 }
+
+
+// function moveMe(){
+//   var myInfo ="<a href> تریلر داستانی و مرحله اول بازی Call of Duty: Modern Warfare III</a>"
+//   for (i=0 ; i<myInfo.length;i++){
+//     document.getElementById("movebaby").innerHTML += myInfo.charAt(i);
+//   }
+   
+ 
+// }
+
+// moveMe();
+function moveMe() {
+  var myInfo = "تریلر داستانی و مرحله اول بازی Call of Duty: Modern Warfare III";
+  var i = 0;
+  var interval = setInterval(function() {
+    document.getElementById("movebaby").innerHTML += myInfo.charAt(i);
+    i++;
+    if (i === myInfo.length) {
+      clearInterval(interval);
+    }
+  }, 40);
+}
+
+moveMe();
+function repeatMoveMe() {
+  var intervalId = setInterval(moveMe, 10000);
+}
+
+repeatMoveMe();
+
 
 // function activeClass() {
 //   var showitems = document.getElementById("show");

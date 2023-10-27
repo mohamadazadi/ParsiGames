@@ -409,7 +409,7 @@ div {
   display: none;
   width: 100%;
   z-index: 100;
-  grid-area: 1/2/1/2;
+  grid-area: 2/1/2/2;
 
 }
 .activemenu{
@@ -432,6 +432,9 @@ div {
 .hiddenme{
   display: none;
 }
+.hiddenme span{
+  cursor: pointer;
+}
 @media (min-width:300px) and (max-width:768px){
   .dropdown{
     display: none;
@@ -440,7 +443,9 @@ div {
     display: none;
   }
 }
-
+.myitems span{
+  cursor: pointer;
+}
 .gridemenu{
   display: grid;
   grid-template-columns: auto auto;
