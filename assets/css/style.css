@@ -1357,26 +1357,23 @@ justify-content: center;
   font-size: 9px;
   background-color: #464646;
   color: #b4b4b4;
-  padding: 7px;
-  right: -3px;
-  padding-right: 21px;
   z-index: 1;
 }
 
 .timeandview {
   background-color: #464646;
   width: 100%;
-
+display: flex;
+justify-content: space-between;
+align-items: baseline;
 }
 
 .timeandview a {
   background-color: #2a292a;
   color: white;
   text-decoration: none;
-  padding: 10px;
-  float: inline-end;
-  margin-top: -5px;
-  margin-left: -6px;
+  padding: 7px 6px;
+  font-size: 10px;
 }
 
 .endparag {
